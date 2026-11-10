@@ -15,10 +15,11 @@ sequence-updated fast weights or momentum, so callers must supply an
 values. The adapter does not claim to capture state that upstream code
 discards.
 
-The common API is `reset`, `update`, `query`, `persistent_state`,
-`static_extra_state`, and `temporary_state`. It also provides recursive byte
-accounting, operation timing, configurable byte/time budgets, a manifest
-schema, and JSONL schemas for delayed recall and VNBench features.
+The common callable API is `reset()`, `update()`, `query()`,
+`persistent_state()`, `static_extra_state()`, and `temporary_state()`. It also
+provides recursive byte accounting, operation timing, configurable byte/time
+budgets, a manifest schema, and JSONL schemas for delayed recall and VNBench
+features.
 
 No-model validation:
 
